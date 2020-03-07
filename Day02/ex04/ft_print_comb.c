@@ -42,8 +42,3 @@ void ft_print_comb()
         a++;
     }
 }
-
-int main(void)
-{
-    ft_print_comb();
-}
