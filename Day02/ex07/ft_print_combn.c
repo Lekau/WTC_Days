@@ -1,56 +1,38 @@
 #include <unistd.h>
-
-ft_putchar(char c)
+#include <stdlib.h>
+void ft_putchar(char a)
 {
-    write(1, &c, 1);
+    write(1, &a, 1);
 }
 
 void ft_print_combn(int n)
 {
-    char a;
-    char b;
-    char c;
-    char d;
-    char e;
-    char f;
-    char g;
-    char h;
-    char i;
+    int i;
+    char my_char;
+    my_char = '0';
+    i = 0;
 
-    while( n <= 1 && a <= '9')
+    while (i <= n)
     {
-        while (n <= 2 && b <= '9')
+        
+        while (my_char <= '9')
         {
-            while (n <= 3 && c <= '9')
-            {
-                while (n <= 4 && d <= '9')
-                {
-                    while (n <= 5 && e <= '9')
-                    {
-                        while (n <= 6 && f <= '9')
-                        {
-                            while (n <= 7 && g <= '9')
-                            {
-                                while (n <= 8 && h <= '9')
-                                {
-                                    while (n <= 9 && i <= '9')
-                                    {
-                                        i++;
-                                    }
-                                    h++;
-                                }
-                                g++;
-                            }
-                            f++;
-                        }
-                        e++;
-                    }
-                    d++;
-                }
-                c++;
-            }
-            b++;
+            ft_putchar(my_char);
+            my_char++;
         }
-        a++;
+        i++;
+    }
+        
+}
+
+int main(int argc, char **argv)
+{
+    if (argc == 2)
+    {
+        ft_print_combn(atoi(argv[1][0]));
+    }
+    else 
+    {
+        ft_putchar('a');
     }
 }
