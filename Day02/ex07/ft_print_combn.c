@@ -14,9 +14,9 @@ void ft_print_combn(int n)
 
     while (i <= n)
     {
-        
+
         while (my_char <= '9')
-        {
+        {   
             ft_putchar(my_char);
             my_char++;
         }
