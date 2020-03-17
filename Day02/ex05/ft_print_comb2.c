@@ -1,7 +1,6 @@
 void ft_putchar(char n){
 
     write(1, &n, 1);
-
 }
 
 void ft_print_comb2(void){
@@ -50,10 +49,4 @@ void ft_print_comb2(void){
        b1 = '0';
        a1++;
    }
-}
-
-int main(void)
-{
-    ft_print_comb2();
-    return (0);
 }
