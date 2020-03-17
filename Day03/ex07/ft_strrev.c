@@ -1,27 +1,24 @@
 #include <stdio.h>
 char *ft_strrev(char *str)
 {
-    char *temp_str;
-    int kau;
-    int uak;
-
-    kau = 0;
-    while(str[kau] != '\0')
+    int i;
+    int k; 
+    char* temp;
+    i = 0;
+    k = 0;
+    temp = str;
+    while (str[k] != '\0')
     {
-        kau++;
+        k++;
     }
-    while (str[uak] != '\0')
+    k--;
+    while (k >= 0)
     {
-        temp_str[uak] = str[kau];
-        uak++;
-        kau--;
+        str[i] = temp[k];
+        i++;
+        k--;
     }
-    kau = 0;
-    while (temp_str[kau] != '\0')
-    {
-        str[kau] = temp_str[kau];
-        kau++;
-    }
+    str[i] = '\0';
     return(str);
 }
 
@@ -29,7 +26,7 @@ int main()
 {
     char *lekau;
 
-    *lekau = "Lekau";
+    lekau = "lekau";
     
     printf("%s", ft_strrev(lekau));
     return(0);
