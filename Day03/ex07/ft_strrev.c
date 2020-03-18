@@ -1,16 +1,17 @@
 #include <stdio.h>
+
 char *ft_strrev(char *str)
 {
     int i;
     int k; 
-    char* temp;
+    char *temp;
     i = 0;
     k = 0;
-    temp = str;
     while (str[k] != '\0')
     {
         k++;
     }
+    temp = str;
     k--;
     while (k >= 0)
     {
@@ -18,7 +19,7 @@ char *ft_strrev(char *str)
         i++;
         k--;
     }
-    str[i] = '\0';
+    temp[i] = '\0';
     return(str);
 }
 
