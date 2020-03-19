@@ -19,7 +19,7 @@ char *ft_strrev(char *str)
         i++;
         k--;
     }
-    temp[i] = '\0';
+    str[i] = '\0';
     return(str);
 }
 
