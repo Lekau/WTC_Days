@@ -11,7 +11,7 @@ char *ft_strrev(char *str)
     {
         k++;
     }
-    temp = str;
+    temp = str; 
     k--;
     while (k >= 0)
     {
@@ -25,9 +25,7 @@ char *ft_strrev(char *str)
 
 int main()
 {
-    char *lekau;
-
-    lekau = "lekau";
+    char lekau[] = "1112345";
     
     printf("%s", ft_strrev(lekau));
     return(0);
