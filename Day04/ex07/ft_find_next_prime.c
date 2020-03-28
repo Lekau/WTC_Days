@@ -18,7 +18,7 @@ int ft_find_next_prime(int nb)
 }
 int main(void)
 {
-    int num = 13;
+    int num = 17;
     printf("%d \n", ft_find_next_prime(num));
     return (0);
 }
